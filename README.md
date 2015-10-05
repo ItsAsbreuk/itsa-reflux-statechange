@@ -2,7 +2,7 @@
 Adds onStateChange to reflux stores which automaticly handles state-changes on any component
 
 ##Example
-
+```js
 // Important note:
 // itsa-reflux-statechange NEEDS to be defined before any components are required!
 
@@ -51,3 +51,4 @@ var app = React.render(<App/>, document.getElementById('container'));
 setTimeout(actions.one, 1000); // will be processed
 setTimeout(app.freezeState, 2000);
 setTimeout(actions.three, 3000); // will *not* be processed, because the state of `app` is frozen
+```
