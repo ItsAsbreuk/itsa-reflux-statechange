@@ -1,0 +1,64 @@
+{
+  "name": "itsa-reflux-statechange",
+  "version": "1.0.0",
+  "description": "Adds onStateChange to reflux stores which automaticly handles state-changes on any component",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsAsbreuk/itsa-reflux-statechange.git"
+  },
+  "babel": {
+    "stage": 0
+  },
+  "scripts": {
+    "test": "mocha tests/*.js",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "keywords": [
+    "react",
+    "reflux"
+  ],
+  "author": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "license": "new BSD",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.19.0",
+    "file-loader": "^0.8.4",
+    "hjs-webpack": "^2.13.2",
+    "json-loader": "^0.5.3",
+    "postcss-loader": "^0.6.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.12.4",
+    "stylus-loader": "^1.3.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0",
+    "yeticss": "^7.0.5",
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.0",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "itsa-event": "^1.0.1",
+    "react": "^0.13.3",
+    "reflux": "^0.2.12"
+  },
+  "bugs": {
+    "url": "https://github.com/ItsAsbreuk/itsa-reflux-statechange/issues"
+  },
+  "homepage": "https://github.com/ItsAsbreuk/itsa-reflux-statechange#readme"
+}
