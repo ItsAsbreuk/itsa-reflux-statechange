@@ -1,5 +1,15 @@
 # itsa-reflux-statechange
-Adds onStateChange to reflux stores which automaticly handles state-changes on any component
+
+If you encounter a component that manages its own state, with no means of communicating it to its owners, and you need to get informed about the state-changes, this module will catch those up and invoke the `onStateChange` of the reflux-store. It also can `freeze` any statechanges in the component that owns the store.
+
+##Features:
+
+* Adds `onStateChange` to reflux-stores which automaticly handles state-changes on any child-component which happens to change its state by itself
+* Can `freeze` (or unfreeze) the `state` of a component, by which state-states of the component -or its ownees- are no longer applied
+
+##Note
+
+`itsa-reflux-statechange` **NEEDS** to be defined before any components are required! This is, because React.createClass is hooked in by the module (unfortunately Component.prototype is not the prototype of created components).
 
 ##Example
 ```js

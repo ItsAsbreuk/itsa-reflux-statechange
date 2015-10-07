@@ -1,6 +1,6 @@
 {
   "name": "itsa-reflux-statechange",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Adds onStateChange to reflux stores which automaticly handles state-changes on any component",
   "main": "main.js",
   "scripts": {
@@ -20,6 +20,8 @@
     "build": "webpack"
   },
   "keywords": [
+    "itsa",
+    "itsasbreuk",
     "react",
     "reflux"
   ],

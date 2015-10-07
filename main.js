@@ -4,7 +4,6 @@ var React = require('react'),
     Reflux = require('reflux'),
     Event = require('itsa-event'),
     DEFAULT_FUNCTIONS = {},
-    NOOP = function() {},
     patchRefluxActions, patchSetState, createdActions, refluxStateChange, defineDefaultFunction, listener;
 
 patchRefluxActions = function() {
@@ -87,7 +86,6 @@ refluxStateChange = {
         },
         componentWillUnmount: function() {
             this.unfreezeState();
-            this.setState = NOOP; // prevent anything to happen when invoked
         }
     }
 };
